@@ -1,0 +1,27 @@
+<!--pages/ticketdetail/ticketdetail.wxml-->
+<view class="wrapper">
+
+  <view class="main">
+    <image class="logo" src="../../assets/images/logo.png"></image>
+
+    <view class="barcode">
+      <canvas canvas-id="barcode" />
+      <view class="barnum">{{ticketcode}}</view>
+    </view>
+    <view class="qrcode">
+      <canvas canvas-id="qrcode" />
+    </view>
+
+    <text class="status">{{description}}</text>
+  </view>
+
+  <view class="footer">
+    <text class="ticketname">{{productname}}</text>
+    <text class="price">券面金额：{{price}}元</text>
+    <text class="valid">有效期限： {{startdate}} 至 {{enddate}}</text>
+  </view>
+
+</view>
+
+<view class="left-circle"></view>
+<view class="right-circle"></view>

@@ -1,0 +1,34 @@
+<!-- pages/big-wheel/index.wxml -->
+
+<view class="page-wheel" style="z-index=1">
+  <sol-wheel id="sol-wheel" award-numer="{{award}}" mode="{{mode}}" bind:start="wheelStart" bind:success="wheelSuccess"></sol-wheel>
+
+  <button wx:if="{{!userinfo.isLogin}}" class="userinfo" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo"></button>
+  <view class="chances" wx:if="{{userinfo.isLogin}}">
+    您还有<text>{{userinfo.chances}}</text>次抽奖机会
+  </view>
+</view>
+
+<view class="record" bindtap="onClickRecord">
+  <image src="../../assets/images/award.png"></image>
+  <text>中奖记录</text>
+</view>
+
+<view class="swiper-view" wx:if="{{winners.length}}">
+  <image src="../../assets/images/notice.png"></image>
+  <swiper class="swiper-container" vertical="true" autoplay="true" circular="true">
+    <block wx:for="{{winners}}" wx:key='key'>
+      <swiper-item>
+        <view>恭喜 {{item.nickname}}抽中{{item.productname}}！</view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>
+
+<view class="note">
+  <text class="rule">抽奖规则</text>
+  <text>● 每位微信用户有3次抽奖机会。</text>
+  <text>● 本礼品券仅限使用一次，不记名，不挂失，不找零。</text>
+  <text>● 最终解释权归 武汉市玫隆皇冠食品有限公司 所有。</text>
+</view>

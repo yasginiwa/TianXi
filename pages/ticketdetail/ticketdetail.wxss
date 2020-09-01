@@ -1,0 +1,124 @@
+/* pages/ticketdetail/ticketdetail.wxss */
+page {
+  background-color: #e0443a;
+}
+
+.wrapper {
+  position: fixed;
+  left: 40rpx;
+  right: 40rpx;
+  top: 80rpx;
+  bottom: 160rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0rpx 10rpx 10rpx rgba(100, 100, 100, 0.5);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.main > .logo {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.main > .status {
+  line-height: 80rpx;
+  color: #e0443a;
+}
+
+.barcode {
+    display: flex;
+    height: 220rpx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40rpx;
+}
+
+.barnum {
+    width: 670rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 38rpx;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 10rpx;
+    white-space: nowrap;
+}
+
+.barcode > canvas {
+    width: 600rpx;
+    height: 220rpx;  
+}
+
+.qrcode {
+    height: 280rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.qrcode > canvas {
+    width: 280rpx;
+    height: 280rpx;
+}
+
+.left-circle {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #e0443a;
+  position: fixed;
+  left: 20rpx;
+  top: calc((100vh - 240rpx) * 0.8 + 60rpx);
+}
+
+.right-circle {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #e0443a;
+  position: fixed;
+  right: 20rpx;
+  top: calc((100vh - 240rpx) * 0.8 + 60rpx);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #ccc;
+  width: 100%;
+  height: 20%;
+  border-top: 1rpx dashed #ddd;
+  font-size: 26rpx;
+  padding-top: 10rpx;
+}
+
+.footer > text {
+  line-height: 60rpx;
+}
+
+.footer > .ticketname {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: black;
+  align-self: center;
+}
+
+.footer > .price {
+  position: relative;
+  left: 30rpx;
+}
+
+.footer > .valid {
+  position: relative;
+  left: 30rpx;
+}

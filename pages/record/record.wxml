@@ -1,0 +1,10 @@
+  <block wx:for="{{tickets}}" wx:key="ticket">
+    <cell 
+      ticketcode="{{item.ticketcode}}"
+      title="{{item.productname}}"
+      price="{{item.price}}"
+      ticketno="{{item.ticketno}}"
+    />
+  </block>
+
+  <view class="norecord" wx:if="{{!tickets.length}}">暂无中奖记录~</view>

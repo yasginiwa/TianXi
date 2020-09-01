@@ -1,0 +1,56 @@
+/* components/cell/cell.wxss */
+
+.cell {
+  width: 100vw;
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #333;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+  left: 20rpx;
+}
+
+.hover {
+  background-color: #f2f3f5;
+}
+
+.cell > .icon {
+  position: absolute;
+  top: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 120rpx;
+}
+
+.cell > .title {
+  position: absolute;
+  top: -20rpx;
+  left: 100rpx;
+  font-size: 26rpx;
+}
+
+.cell > .price {
+  position: absolute;
+  bottom: -24rpx;
+  left: 100rpx;
+  font-size: 24rpx;
+  color: #888;
+}
+
+.cell > .num {
+  position: absolute;
+  font-size: 20rpx;
+  left: 220rpx;
+  bottom: -22rpx;
+  color: #888;
+}
+
+.cell .arrow {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: 40rpx;
+  right: 40rpx;
+}

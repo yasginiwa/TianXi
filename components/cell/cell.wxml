@@ -1,0 +1,9 @@
+<!--components/cell/cell.wxml-->
+<view class="cell" bindtap="onCellClick" hover-class="hover" data-code="{{ticketcode}}">
+    <image class="icon" src="../../assets/images/box.png"></image>
+    <text class="title">{{title}}</text>
+    <text class="price">¥ {{price}}</text>
+    <text class="num">No. {{ticketno}}</text>
+    <image class="arrow" src="../../assets/images/arrow.png"></image>
+    <text style="display: none">{{ticketcode}}</text>
+</view>

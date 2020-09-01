@@ -1,0 +1,8 @@
+/* pages/record/record.wxss */
+
+.norecord {
+  margin-top: 80rpx;
+  color: #aaa;
+  text-align: center;
+}
+
